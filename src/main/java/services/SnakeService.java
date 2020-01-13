@@ -8,7 +8,6 @@ import entities.SquarePlayingField;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-//TODO refactor move methods
 public class SnakeService {
 
     private SpriteService spriteService;
@@ -21,7 +20,7 @@ public class SnakeService {
         this.snake = snake;
     }
 
-    void updateSnakeSituation(Direction direction){
+    void updateSnakeSituation(Direction direction) {
         updateSnakeBody(direction);
         eatSpriteIfPossible();
     }
